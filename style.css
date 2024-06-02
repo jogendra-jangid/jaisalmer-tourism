@@ -889,7 +889,7 @@ list-style-type: none;
 
 #page-2-part1 p{
     font-size:2.1vh ;
-    padding: 10px 10px;
+    padding: 15px 10px;
     font-weight: 400;
 }
 
@@ -948,8 +948,8 @@ list-style-type: none;
 }
 
 #page-3-part1 p{
-    font-size:1.8vh ;
-    padding: 0 10px;
+    font-size:1.7vh ;
+    padding: 20px 10px;
     font-weight: 400;
 }
 
