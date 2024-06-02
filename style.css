@@ -1,0 +1,1316 @@
+/*
+░▀▀█░█▀█░█▀▀░█▀▀░█▀█░█▀▄░█▀▄░█▀█░░░▀▀█░█▀█░█▀█░█▀▀░▀█▀░█▀▄
+░░░█░█░█░█░█░█▀▀░█░█░█░█░█▀▄░█▀█░░░░░█░█▀█░█░█░█░█░░█░░█░█
+░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀░░▀░▀░▀░▀░░░▀▀░░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀░ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Joti One";
+    ::selection{
+        color: rgba(7, 7, 7, 0.586);
+        background-color: rgb(0, 255, 221);
+    }
+    ::-webkit-scrollbar {
+        width: 0.5vw; /* Adjust the width of the scrollbar */
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #f608abc9; /* Change to your desired color */
+        border-radius: 1vw;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #c6c36d;
+    }
+
+}
+
+
+@font-face{
+    font-family: "Joti One";
+    src: url(./fonts/JotiOne-Regular.woff2);
+    }
+    
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* wrappper div */
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fbe98a;
+    position: absolute;
+    top: 0;
+}
+/* navbar */
+#navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    background-color: #fdc759;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav-part1{
+    height: 100%;
+    width: 40%;
+    display: flex;
+}
+#nav-part1 h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 2,3vw;
+    margin-top: 0.7vw;
+}
+
+#nav-part1 h1 a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+ 
+#nav-part1 img{
+    height: 11vh;
+}
+
+#nav-part2{
+    height:100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 14vw;
+}
+
+
+
+#nav-part2 ul {
+display: flex;
+list-style-type: none;
+}
+#nav-part2 ul li {
+    margin-right: 20px;
+}
+#nav-part2 ul li a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #655A5A;
+}
+
+#nav-part2 #first-word{
+    color: red;
+}
+
+/* main page / first page  */
+#first-div{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    padding: 0.5vw 0.5vw;
+    position: relative;
+    top: 0;
+}
+
+#first-div1{
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 2vw;
+    border-radius: 1vw;
+    
+}
+
+#first-div1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1.9vw;
+}
+
+#first-div2 {
+    border-radius: 1.5vw;
+    background-color: #fdc759;
+    height: 50%;
+    width: 40%;
+    position: relative;
+    top: 35%;
+    left: 58%;
+}
+
+#first-div2 p{
+    font-size: 1.4vw;
+    padding: 0.5vw 2vw;
+    color: #0a0a0a;
+    font-weight: 500;
+}
+ 
+#first-div #first-div2 p span{
+    color: red;
+    font-weight: 900;
+}
+#first-div h2{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0.5vw;
+    color: #7d755b;
+} 
+/* page 2 */
+#page-2{
+    height: 100%;
+    width: 100%;
+    background-color: #fbe98a;
+    display: flex;
+    position: relative;
+    top: 0;
+}
+
+#page-2  h2{
+    /* page-2-heading animation */
+    animation-name: page-2-heading;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+    /* ends here */
+    height: 100px;
+    font-size: 3vw;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    left: 37%;
+    margin-top: 1vw;
+}
+#page-2 #dance{
+    height: 10%;
+    width: 500px;
+    border-radius: 1vw;
+    position: relative;
+    top: 3.4vw;
+    color: rgb(255, 80, 80);
+
+}
+
+
+
+#page-2-part1 {
+    /* animation */
+    animation-name: page-2-anime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    margin-top: 10vw;
+    padding: 3vw;
+    height: 65vh;
+    width: 50%;
+    background-color: #fdc759;
+    border-radius: 1vw;
+    position: relative;
+    left: -20%;
+}
+
+#page-2-part1 h3 {
+    font-size: 2vw;
+
+    
+}
+
+#page-2-part1 p{
+    margin-top: 1vw;
+    font-size:1.5vw ;
+    padding: 0.6vw;
+}
+
+#page-2-part2{
+    height: 65vh;
+    width: 60%;
+    border-radius: 1vw;   
+    margin-right: 3vw; 
+    
+}
+
+#page-2-part2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    position: relative;
+    margin-top: 10vw;
+
+}
+/* #page 3 */
+
+#page-3{
+    height: 100%;
+    width: 100%;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-3-part1{
+      /* animation */
+    animation-name: page-3-anime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    margin-left: 3.8%;
+    height: 80vh;
+    width: 40%;
+    background-color: #fdc759;
+    border-radius: 1vw;
+    padding: 3vw;
+}
+
+#page-3-part1 h3{
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+#page-3-part1 p{
+    font-size: 1.3vw;
+    padding: 1.5vw;
+}
+
+#page-3-part2{
+    height: 80%;
+    width:50% ;
+    margin-right: 2vw;
+}
+
+#page-3-part2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+
+}
+
+
+/* page 4 */
+
+#page-4{
+    height: 100%;
+    width: 100%;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-4-part1{
+     /* animation */
+     animation-name: page-4-anime;
+     animation-duration: 1s;
+     animation-timing-function: ease;
+     animation-iteration-count:infinite ;
+     /* animation ends here */    
+    margin-left: 3.8%;
+    margin-right: 3.8%;
+    height: 50vh;
+    width: 40%;
+    background-color: #fdc759;
+    border-radius: 1vw;
+    padding: 3vw;
+}
+
+#page-4-part1 h3{
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+#page-4-part1 p{
+    font-size: 1.3vw;
+    padding: 1vw;
+}
+
+#page-4-part2{
+    height: 80%;
+    width:55% ;
+    margin-right: 2vw;
+}
+
+#page-4-part2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+
+}
+
+/* #food / page 5*/
+
+#food{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #fbe98a;
+     display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+#food h3{
+    font-size: 3.4vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#food h3::first-line{
+    color: rgb(255, 80, 80);
+}
+#daal-baati-1{
+    height: 100%;
+    width: 40%;
+    padding: 5vw 3vw;
+}
+
+#daal-baati-1 img {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(155, 96, 96);
+    border-radius: 1vw;
+}
+#daal-baati-1 h4{
+    margin-bottom: 0.1vw;
+    text-align: center;
+    font-size: 2vw;
+    color: #f71212;
+    width: fit-content; 
+    padding: 1vw;
+}
+#daal-baati-2{
+  
+    padding: 7vw 3vw;
+    height: 100%;
+    width: 50%;
+}
+#daal-baati-2 p{
+    /* animation */
+  animation-name: daal-baati;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite ;
+  /* animation ends here */ 
+    font-size: 1.3vw;
+    margin-top: 8vw;
+    background-color: #fdc759;
+    padding: 3vw 4vw;
+    border-radius: 1vw;
+}
+
+/* # food second page ghevar / page 6 */
+
+#food-part2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #fbe98a;
+     display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+#ghevar-1{
+    height: 100%;
+    width: 40%;
+    padding: 5vw 3vw;
+}
+
+#ghevar-1 img {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(155, 96, 96);
+    border-radius: 1vw;
+}
+#ghevar-1 h4{
+    margin-bottom: 0.1vw;
+    text-align: center;
+    font-size: 2vw;
+    color: #f71212;
+    width: fit-content; 
+    padding: 1vw;
+}
+#ghevar-2{
+
+    padding: 7vw 3vw;
+    height: 100%;
+    width: 50%;
+}
+#ghevar-2 p{
+     /* animation */
+  animation-name: daal-baati;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite ;
+  /* animation ends here */ 
+    line-height: 1.8vw;
+    font-size: 1.3vw;
+    margin-top: 8vw;
+    background-color: #fdc759;
+    padding: 3vw 4vw;
+    border-radius: 1vw;
+}
+
+/*  food part 3 ker sangri page 7 */
+
+#food-part3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #fbe98a;
+     display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+#ker-sangri1{
+    height: 100%;
+    width: 40%;
+    padding: 5vw 3vw;
+}
+
+#ker-sangri1 img {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(155, 96, 96);
+    border-radius: 1vw;
+}
+#ker-sangri1 h4{
+    margin-bottom: 0.1vw;
+    text-align: center;
+    font-size: 2vw;
+    color: #f71212;
+    width: fit-content; 
+    padding: 1vw;
+}
+#ker-sangri2{
+
+    padding: 7vw 3vw;
+    height: 100%;
+    width: 50%;
+    margin-bottom: 6vw;
+}
+#ker-sangri2 p{
+     /* animation */
+  animation-name: daal-baati;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite ;
+  /* animation ends here */ 
+    line-height: 1.8vw;
+    font-size: 1.3vw;
+    margin-top: 8vw;
+    background-color: #fdc759;
+    padding: 3vw 4vw;
+    border-radius: 1vw;
+}
+
+/*  history  page 8 */
+
+
+#history{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #fbe98a;
+     display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+#history h3{
+    font-size: 3.4vw;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#history h3::first-line{
+    color: rgb(255, 80, 80);
+}
+#history-1{
+    height: 100%;
+    width: 40%;
+    padding: 5vw 3vw;
+}
+
+#history-1 img {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(155, 96, 96);
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+
+#history-2{
+    padding: 7vw 3vw;
+    height: 100%;
+    width: 60%;
+    margin-bottom: 1vw
+}
+#history-2 p{
+     /* animation */
+  animation-name: rajasthan-history;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite ;
+  /* animation ends here */ 
+    font-size: 1.2vw;
+    background-color: #fdc759;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+/* footer */
+#footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    background-color: #fdc759;
+    padding: 2vw;
+}
+
+#footer-1 h2{
+    font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#footer-2 p{
+    font-size: 1.5vw;
+    font-family: "Joti One";
+}
+
+#footer-1 h2 a{
+    text-decoration: none;
+    color: #f71212;
+}
+
+/* page 2 css animation */
+
+@keyframes page-2-anime {
+    from{
+        right: 0%;
+        background:linear-gradient(#e49a44,#ff8902) ;
+
+    }
+    to{
+        right: -15%;
+        background:linear-gradient(#ff8902,#e49a44) ;    }
+}
+@keyframes page-3-anime {
+    from{
+        right: 0%;
+        background:linear-gradient(#e49a44,#ff8902) ;
+
+    }
+    to{
+        right: -15%;
+        background:linear-gradient(#ff8902,#e49a44) ;    }
+}
+
+
+@keyframes page-4-anime {
+    from{
+        right: 0%;
+        background:linear-gradient(#e49a44,#ff8902) ;
+
+    }
+    to{
+        right: -15%;
+        background:linear-gradient(#ff8902,#e49a44) ;    }
+}
+@keyframes daal-baati {
+    from{
+        right: 0%;
+        background:linear-gradient(#e49a44,#ff8902) ;
+
+    }
+    to{
+        right: -15%;
+        background:linear-gradient(#ff8902,#e49a44) ;    }
+}
+@keyframes rajasthan-history {
+    from{
+        right: 0%;
+        background:linear-gradient(#e49a44,#ff8902) ;
+
+    }
+    to{
+        right: -15%;
+        background:linear-gradient(#ff8902,#e49a44) ;    }
+}
+
+/* page 2 heading animation */
+
+
+    /*  responsive design starts here */
+
+    @media (max-width: 600px) {
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Joti One";
+            ::selection{
+                color: rgba(7, 7, 7, 0.586);
+                background-color: rgb(0, 255, 221);
+            }
+            ::-webkit-scrollbar {
+                width: 0.5vw; /* Adjust the width of the scrollbar */
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: #f608abc9; /* Change to your desired color */
+                border-radius: 1vw;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: #ffffff;
+            }
+        
+        }
+        
+        
+        @font-face{
+            font-family: "Joti One";
+            src: url(./fonts/JotiOne-Regular.woff2);
+            }
+            
+            
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+   /* wrappper div */
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fbe98a;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+}
+/* navbar */
+#navbar{
+    height: 7vh;
+    width: 100%;
+    /* padding: 0 3vw; */
+    background-color: #fdc759;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+}
+
+#nav-part1{
+    height: 100%;
+    width: 100%;
+}
+#nav-part1 h1{
+    position: absolute;
+    left: 14%;
+    top: 34%;
+    font-size: 1.8vh;
+    margin-top: 0.7vw;
+    margin-left: 10px;
+}
+
+#nav-part1 h1 a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+ 
+#nav-part1 img{
+    height: 8vh;
+    padding: 1vw 0.1vw;
+}
+
+#nav-part2{
+    height:100%;
+    width: 60%;
+    position: absolute;
+    left: 38%;
+    top: 5%;    
+    padding-right: 0;
+}
+
+
+
+#nav-part2 ul {
+display: flex;
+list-style-type: none;
+}
+#nav-part2 ul li {
+    margin-right: 5px;
+}
+#nav-part2 ul li a {
+    font-size: 1.6vh;
+    text-decoration: none;
+    color: #655A5A;
+    margin: 2px;
+}
+
+#nav-part2 #first-word{
+    color: red;
+}
+
+
+/* main page / first page  */
+#first-div{
+    height: 100%;
+    width: 96%;
+    padding: 20px 50px;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#first-div1{
+    margin-top: 10px;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 2vw;
+    border-radius: 1vw;
+    
+}
+
+#first-div1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1.9vw;
+}
+
+#first-div2 {
+    border-radius: 1.5vw;
+    background-color: #fdc759;
+    height: 47%;
+    width: 90%;
+    padding: 10px 10px;
+    position: absolute;
+    top: 52%;
+    left: 7%;
+}
+
+#first-div2 p{
+    width: 100%;
+    font-size: 2.2vh;
+    color: #5e5858;
+    font-weight: 600;
+}
+ 
+#first-div #first-div2 p span{
+    color: rgba(255, 0, 0, 0.944);
+    font-weight: 900;
+}
+#first-div h2{
+    font-size: 2.7vh;
+    text-align: center;
+    margin-top: 0.5vw;
+    color: #7d755b;
+} 
+
+/* page 2 */
+#page-2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0%;
+}
+
+#page-2  h2{
+    font-size: 30px;
+    position: relative;
+    left: -13%;
+}
+#page-2 #dance{
+    height: 10%;
+    border-radius: 1vw;
+    position: relative;
+    top: 3.4vw;
+    color: rgb(255, 80, 80);
+
+}
+
+
+
+#page-2-part1 {
+    /* animation */
+    animation-name: page-2-anime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    margin-top: 10vh;
+    height: 35%;
+    width: 96%;
+    background-color: #fdc759;
+    border-radius: 1vw;
+    position: absolute;
+    top: 0;
+    margin-left: 22%;
+}
+
+#page-2-part1 h3 {
+    font-size: 3vh;
+
+    
+}
+
+#page-2-part1 p{
+    font-size:2.1vh ;
+    padding: 10px 10px;
+    font-weight: 400;
+}
+
+#page-2-part2{
+    height: 42%;
+    width: 96%;
+    border-radius: 1vw;   
+    position: relative;
+    top: 36%;
+    left: 8px;
+}
+
+#page-2-part2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    /* position: relative; */
+    margin-top: 10vw;
+
+}
+
+/* #page 3 */
+
+#page-3{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0%;
+}
+
+#page-3-part1 {
+    /* animation */
+    animation-name: page-2-nime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    margin-top: 20px;
+    height: 40%;
+    width: 96%;
+    background-color: #fdc759;
+    border-radius: 1vw;
+    position: absolute;
+    top: -5%;
+    margin-left: 0;
+    margin-bottom: 130px;
+}
+
+#page-3-part1 h3 {
+    font-size: 3vh;
+
+    
+}
+
+#page-3-part1 p{
+    font-size:1.8vh ;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+#page-3-part2{
+    height: 42%;
+    width: 96%;
+    border-radius: 1vw;   
+    position: relative;
+    top: 42%;
+    left: 4px;
+}
+
+#page-2-part2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    /* position: relative; */
+    margin-top: 10vw;
+
+}
+/*  #page 4 */
+
+#page-4{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0%;
+}
+
+#page-4-part1 {
+    /* animation */
+    animation-name: page-2-nime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    margin-top: 20px;
+    height: 37%;
+    width: 96%;
+    background-color: #fdc759;
+    border-radius: 1vw;
+    position: absolute;
+    top: -10%;
+    margin-left: 12px;
+    margin-bottom: 130px;
+}
+
+#page-4-part1 h3 {
+    font-size: 3vh;
+}
+
+#page-4-part1 p{
+    font-size:2.3vh ;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+#page-4-part2{
+    height: 42%;
+    width: 96%;
+    border-radius: 1vw;   
+    position: relative;
+    top: 28%;
+    left: 4px;
+}
+
+#page-4-part2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    /* position: relative; */
+    margin-top: 10vw;
+
+}
+/*  #food daal baati churma */
+
+#food{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0%;
+}
+#food h3{
+    font-size:4vh;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: -20%;
+}
+
+#daal-baati-1 {
+    /* animation */
+    animation-name: page-2-nime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    height: 45%;
+    width: 98%;
+    border-radius: 1vw;
+    position: absolute;
+    margin-left: 4px;
+    top: -10%;
+}
+
+#daal-baati-1 h4 {
+    position: relative;
+    /* top: -40%; */
+    left: 23%;
+    font-size: 4vh;
+}
+
+#daal-baati-2 p{
+    font-size:2.3vh ;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+#daal-baati-2{
+    height: 42%;
+    width: 98%;
+    border-radius: 1vw;   
+    position: relative;
+    top: 35%;
+    left:2px;
+}
+
+#daal-baati-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/*  #food part 2 ghevar */
+
+#food-part2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0%;
+}
+#ghevar-1 h4{
+    font-size:4vh;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: -20%;
+    left: 0;
+}
+
+#ghevar-1 {
+    /* animation */
+    animation-name: page-2-nime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    height: 45%;
+    width: 98%;
+    border-radius: 1vw;
+    position: absolute;
+    margin-left: 4px;
+    top: -10%;
+}
+
+#ghevar-1 h4 {
+    position: relative;
+    /* top: -40%; */
+    /* left: 23%; */
+    font-size: 4vh;
+}
+
+#ghevar-2 p{
+    height: 70%;
+    width: 100%;
+    font-size:2vh ;
+    padding: 20px 20px;
+    line-height: 2.6vh;
+    font-weight: 700;
+}
+
+#ghevar-2{
+    height: 70%;
+    width: 98%;
+    border-radius: 1vw;   
+    position: relative;
+    top: 30%;
+    left:2px;
+}
+
+#daal-baati-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+
+/*  #food part 3 ker sangri */
+
+#ker-sangri1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbe98a;
+    position: relative;
+    top: 0%;
+}
+#ker-sangri1 h4{
+    font-size:4vh;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: -10%;
+    /* left: 24%; */
+}
+
+#ker-sangri1 {
+    /* animation */
+    animation-name: page-2-nime;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite ;
+    /* animation ends here */
+    height: 45%;
+    width: 98%;
+    border-radius: 1vw;
+    position: absolute;
+    margin-left: 4px;
+    top: -10%;
+}
+
+#ker-sangri1 h4 {
+    position: relative;
+    /* top: -40%; */
+    /* left: 23%; */
+    font-size: 4vh;
+}
+
+#ker-sangri2 p{
+    height: 65%;
+    width: 100%;
+    font-size:2vh ;
+    padding: 20px 20px;
+    line-height: 2.6vh;
+    font-weight: 700;
+}
+
+#ker-sangri2{
+    height: 90%;
+    width: 98%;
+    border-radius: 1vw;   
+    position: relative;
+    top: 25%;
+    left:2px;
+}
+
+#daal-baati-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+/* rajasthan ka ithihaas  bottom page */
+
+/*  history  page 8 */
+
+
+#history{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    top: -5%;
+    background-color: #fbe98a;
+     display: flex; 
+     flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+#history h3{
+    font-size: 3.5vh;
+   height: 150px;
+   width: 100%;
+   text-align: center;
+   position: relative;
+   top: 0;
+}
+
+#history h3::first-line{
+    color: rgb(255, 80, 80);
+}
+#history-1{
+    height: 100%;
+    width: 100%;
+    padding: 1vw 3vw;
+}
+
+#history-1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+#history-2{
+    padding: 20px 20px;
+    height: 100%;
+    width: 100%;
+}
+#history-2 p{
+     /* animation */
+  animation-name: rajasthan-history;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite ;
+  /* animation ends here */
+    height: 100%;
+    width: 100%; 
+    font-size: 1.5vh;
+    background-color: #fdc759;
+    padding: 20px 20px;
+    border-radius: 1vw;
+    margin-bottom: 30px;
+}
+
+/* footer */
+#footer{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+    top: 8%;
+    background-color: #fdc759;
+    padding: 20px;
+}
+
+#footer-1 h2{
+    font-size: 1.5vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#footer-1 h2 a{
+    text-decoration: none;
+    color: #f71212;
+}
+#footer-2{
+    display: none;
+}
+    }
