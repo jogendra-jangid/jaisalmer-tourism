@@ -41,7 +41,6 @@ gsap.from("#page-2 #page-2-part1",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#page-2 #page-2-part1",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 50%",
@@ -59,7 +58,6 @@ gsap.from("#page-2 #page-2-part2 img",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#page-2 #page-2-part2 img",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -78,7 +76,6 @@ gsap.from("#page-3 #page-3-part1",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#page-3 #page-3-part1",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -96,7 +93,6 @@ gsap.from("#page-3 #page-3-part2 img",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#page-3 #page-3-part2 img",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -113,7 +109,6 @@ gsap.from("#page-4 #page-4-part1",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#page-4 #page-4-part1",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -131,7 +126,6 @@ gsap.from("#page-4 #page-4-part2 img",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#page-4 #page-4-part2 img",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -148,7 +142,6 @@ gsap.from("#food #daal-baati-1 img",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#food #daal-baati-1 img",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -166,7 +159,6 @@ gsap.from("#food #daal-baati-2 ",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#food #daal-baati-2 ",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -183,7 +175,6 @@ gsap.from("#food-part2 #ghevar-1 img",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#food-part2 #ghevar-1 img",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -201,7 +192,6 @@ gsap.from("#food-part2 #ghevar-2 ",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#food-part2  #ghevar-2 ",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -219,7 +209,6 @@ gsap.from("#food-part3 #ker-sangri1 img",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#food-part3 #ker-sangri1 img",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
@@ -237,7 +226,6 @@ gsap.from("#food-part3 #ker-sangri2 ",{
   scale:0.5,
   scrollTrigger:{
     trigger:"#food-part3  #ker-sangri2 ",
-    scroller:"body",
     markers:false,
     start:"0",
     end:"top 10%",
