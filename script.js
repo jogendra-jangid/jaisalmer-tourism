@@ -71,21 +71,21 @@ gsap.from("#page-2 #page-2-part2 img",{
 //page 3 scrolltrigger
 
 //  page 2 part 1 scrolltrigger
-// gsap.from("#page-3 #page-3-part1",{
-//   y: 200,
-//   duration:0.2,
-//   opacity:0,
-//   scale:0.5,
-//   scrollTrigger:{
-//     trigger:"#page-3 #page-3-part1",
-//     scroller:"body",
-//     markers:false,
-//     start:"0",
-//     end:"top 10%",
+gsap.from("#page-3 #page-3-part1",{
+  y: 200,
+  duration:0.2,
+  opacity:0,
+  scale:0.5,
+  scrollTrigger:{
+    trigger:"#page-3 #page-3-part1",
+    scroller:"body",
+    markers:false,
+    start:"0",
+    end:"top 10%",
 
-//     scrub:5
-//   }
-// })
+    scrub:5
+  }
+})
 
 // page 3 part 2 scrolltrigger
 

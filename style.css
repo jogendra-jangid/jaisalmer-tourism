@@ -701,7 +701,7 @@ list-style-type: none;
             
             
 html, body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     height: 100%;
     width: 100%;
 }
@@ -712,7 +712,7 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: #fbe98a;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: relative;
     top: 0;
 }
